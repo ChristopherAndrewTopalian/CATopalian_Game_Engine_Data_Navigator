@@ -34,7 +34,7 @@ function makeLogo()
 
     let appTitle = ce("div");
     appTitle.style.color = "rgb(126, 203, 255)";
-    appTitle.innerText = "TOPALIAN GAME ENGINE\nDATA NAVIGATOR";
+    appTitle.innerText = "CATOPALIAN GAME ENGINE\nDATA NAVIGATOR";
     mainDiv.append(appTitle);
 
     //-//
@@ -61,9 +61,9 @@ function makeLogo()
     //-//
 
     let appLink = ce("a");
-    appLink.href = "https://github.com/ChristopherTopalian/TopalianGameEngineDataNavigator";
+    appLink.href = "https://github.com/ChristopherAndrewTopalian/CATopalian_Game_Engine_Data_Navigator";
     appLink.target = "_blank";
-    appLink.textContent = "GitHub.com/ChristopherTopalian";
+    appLink.textContent = "GitHub.com/ChristopherAndrewTopalian";
     mainDiv.append(appLink);
 }
 
