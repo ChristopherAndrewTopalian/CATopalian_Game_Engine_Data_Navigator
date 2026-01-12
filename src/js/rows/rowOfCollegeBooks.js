@@ -11,8 +11,8 @@ function rowOfCollegeBooks(theX, theY, sizeX, sizeY, whichArray)
     mainDiv.className = "";
     mainDiv.title = "rowOfCollegeBooks(theX, theY, sizeX, sizeY, whichArray)";
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = theX;
-    mainDiv.style.top = theY;
+    mainDiv.style.left = theX + 'px';
+    mainDiv.style.top = theY + 'px';
     mainDiv.style.display = "flex";
     mainDiv.style.flexDirection = "row";
     mainDiv.style.gap = 75 + "px";

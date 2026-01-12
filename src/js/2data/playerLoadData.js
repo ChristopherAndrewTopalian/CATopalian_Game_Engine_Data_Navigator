@@ -23,16 +23,16 @@ function playerLoadData(whichId)
         playerElement.style.color = playerArray[0].colorText;
 
         // X position
-        playerElement.style.left = playerArray[0].x;
+        playerElement.style.left = playerArray[0].x + 'px';
 
         // Y position
-        playerElement.style.top = playerArray[0].y;
+        playerElement.style.top = playerArray[0].y + 'px';
 
         // width
-        playerElement.style.width = playerArray[0].width;
+        playerElement.style.width = playerArray[0].width + 'px';
 
         // height
-        playerElement.style.height = playerArray[0].height;
+        playerElement.style.height = playerArray[0].height + 'px';
     }
 }
 

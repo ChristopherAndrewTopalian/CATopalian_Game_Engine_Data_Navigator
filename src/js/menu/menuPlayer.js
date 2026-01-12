@@ -74,7 +74,7 @@ function menuPlayer()
     // prevent menu leaving screen on left side
     if (positionGet(menuId).x <= 100)
     {
-        theMenu.style.left = 50;
+        theMenu.style.left = '50px';
     }
 
     // prevent menu going off screen top side

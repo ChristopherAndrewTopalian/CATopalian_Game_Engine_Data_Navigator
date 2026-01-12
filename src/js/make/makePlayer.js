@@ -5,12 +5,12 @@ function makePlayer()
     let player = ce("div");
     player.id = "thePlayer";
     player.style.position = 'absolute';
-    player.style.left = ourPlayer.x;
-    player.style.top = ourPlayer.y;
+    player.style.left = ourPlayer.x + 'px';
+    player.style.top = ourPlayer.y + 'px';
     player.style.backgroundSize = 'cover';
-    player.style.backgroundPosition = 'center center';
-    player.style.backgroundRepeat = 'no-repeat';
-    player.style.objectFit = 'cover';
+    //player.style.backgroundPosition = 'center center';
+    //player.style.backgroundRepeat = 'no-repeat';
+    //player.style.objectFit = 'cover';
     player.style.zIndex = 2;
     player.ondblclick = function()
     {

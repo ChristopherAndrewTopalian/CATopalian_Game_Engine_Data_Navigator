@@ -33,7 +33,7 @@ function menuDNA()
     theMenu.className = "divStyle001";
     theMenu.style.width = '200px';
     theMenu.style.height = '200px';
-    theMenu.style.marginBottom = 4 +'px';
+    theMenu.style.marginBottom = 4 + 'px';
     theMenu.style.overflowY = "auto";
     mainDiv.append(theMenu);
 
@@ -47,7 +47,7 @@ function menuDNA()
     // prevent menu leaving screen on left side
     if (positionGet(menuId).x <= 100)
     {
-        theMenu.style.left = 50;
+        theMenu.style.left = '50px';
     }
 
     // prevent menu going off screen top side

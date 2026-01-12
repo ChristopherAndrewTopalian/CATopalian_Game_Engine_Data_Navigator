@@ -9,8 +9,8 @@ function rowOfBookImages(theX, theY, sizeX, sizeY, whichArray, criteria1, theHea
     mainDiv.className = "bookImageStyle";
     mainDiv.title = "rowOfBookImages(theX, theY, sizeX, sizeY, whichArray, criteria1, theHeading)";
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = theX;
-    mainDiv.style.top = theY;
+    mainDiv.style.left = theX + 'px';
+    mainDiv.style.top = theY + 'px';
     mainDiv.style.display = "flex";
     mainDiv.style.flexDirection = "row";
     mainDiv.style.gap = 75 + "px";
