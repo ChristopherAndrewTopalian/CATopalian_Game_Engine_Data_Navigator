@@ -64,21 +64,22 @@ function menuGeneCategory(whichArray)
     nameLabel.textContent = "Name ";
     theMenu.append(nameLabel);
 
+    // Replaced string literals with executable anonymous functions
     let geneCategories =
     [
         {
             name: 'chromosome17',
-            function: 'rowOfGenes(CHROMOSOME17)'
+            action: function() { rowOfGenes(CHROMOSOME17); }
         },
 
         {
             name: 'chromosome7',
-            function: 'rowOfGenes(CHROMOSOME7)'
+            action: function() { rowOfGenes(CHROMOSOME7); }
         },
 
         {
             name: 'chromosome10',
-            function: 'menuGeneCategory(CHROMOSOME10)'
+            action: function() { menuGeneCategory(CHROMOSOME10); }
         }
     ];
 
@@ -94,7 +95,9 @@ function menuGeneCategory(whichArray)
         geneButton.onclick = function()
         {
             clickSound();
-            eval(geneCategories[x].function);
+            
+            // Call the stored function directly
+            geneCategories[x].action();
         };
         theMenu.append(geneButton);
     }

@@ -12,31 +12,31 @@ let bottomToolbarArray =
 [
     {
         name: "Build",
-        functionName: `activateBuildMode();`
+        action: function() { activateBuildMode(); }
     },
     {
         name: "Player",
-        functionName: `menuPlayer()`,
+        action: function() { menuPlayer(); }
     },
     {
         name: "GoTo",
-        functionName: `structuresRow(ourPlayer.x, ourPlayer.y, 125, 200, structuresArray);`,
+        action: function() { structuresRow(ourPlayer.x, ourPlayer.y, 125, 200, structuresArray); }
     },
     {
         name: "MouseOn",
-        functionName: `mouseOn()`,
+        action: function() { mouseOn(); }
     },
     {
         name: "MouseOff",
-        functionName: `mouseOff()`,
+        action: function() { mouseOff(); }
     },
     {
         name: "Road",
-        functionName: `makeRoad()`,
+        action: function() { makeRoad(); }
     },
     {
         name: "DNA",
-        functionName: `menuDNA()`,
+        action: function() { menuDNA(); }
     }
 ];
 
@@ -91,7 +91,8 @@ function makeBottomToolbar(whichArray)
         theButton.onclick = function()
         {
             clickSound();
-            eval(' ' + whichArray[x].functionName + ' ');
+            // Execute the stored function directly
+            whichArray[x].action();
         };
 
         toolBarSubDiv.append(theButton);

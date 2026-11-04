@@ -166,30 +166,31 @@ function menuPlayer()
 
     //-//
 
+    // we replaced string literals with executable anonymous functions
     let sections =
     [
         {
             name: 'Scripting',
             class: 'ourButton',
-            whenClicked: `travelTo('scripting');`
+            action: function() { travelTo('scripting'); }
         },
 
         {
             name: 'Evidence',
             class: 'ourButton',
-            whenClicked: `travelTo('evidence');`
+            action: function() { travelTo('evidence'); }
         },
 
         {
             name: 'Books',
             class: 'ourButton',
-            whenClicked: `travelTo('books');`
+            action: function() { travelTo('books'); }
         },
 
         {
             name: 'News',
             class: 'ourButton',
-            whenClicked: `travelTo('news');`
+            action: function() { travelTo('news'); }
         }
     ];
 
@@ -205,7 +206,9 @@ function menuPlayer()
         travelToButton.onclick = function()
         {
             clickSound();
-            eval(sections[i].whenClicked);
+            
+            // Call the stored function directly
+            sections[i].action();
         };
         theMenu.append(travelToButton);
     }
