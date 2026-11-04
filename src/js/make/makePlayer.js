@@ -7,10 +7,19 @@ function makePlayer()
     player.style.position = 'absolute';
     player.style.left = ourPlayer.x + 'px';
     player.style.top = ourPlayer.y + 'px';
-    player.style.backgroundSize = 'cover';
-    //player.style.backgroundPosition = 'center center';
-    //player.style.backgroundRepeat = 'no-repeat';
-    player.style.objectFit = 'cover';
+
+    // Give the div an explicit size so you control the scale
+    player.style.width = '150px'; 
+    player.style.height = '300px'; 
+
+    // Change from 'cover' to 'contain' to prevent clipping
+    player.style.backgroundSize = 'contain'; 
+    player.style.backgroundRepeat = 'no-repeat';
+    player.style.backgroundPosition = 'center center';
+    
+    // Remove objectFit if you are using background images instead of <img> tags
+    // player.style.objectFit = 'cover'; 
+
     player.style.zIndex = 2;
     player.ondblclick = function()
     {
