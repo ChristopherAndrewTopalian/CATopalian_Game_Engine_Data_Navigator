@@ -171,7 +171,7 @@ function rowOfInvestigation(theX, theY, sizeX, sizeY, whichArray, criteria1)
                 //-//
 
                 let noteSpan = ce("span");
-                noteSpan.textContent = whichArray[i].note;
+                noteSpan.innerHTML = whichArray[i].note;
                 theDiv.append(noteSpan);
 
                 //-//
