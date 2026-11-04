@@ -73,23 +73,24 @@ function menuDNA()
     theMenu.append(ce('br'));
 
     //-//
-
+    
+    // Store executable functions
     let geneCategories =
     [
         {
             name: 'chromosome1',
-            function: `rowOfGenes(GENES, '1')`
+            action: function() { rowOfGenes(GENES, '1'); }
         },
 
         {
             name: 'chromosome7',
-            function: `rowOfGenes(GENES, '7')`
+            action: function() { rowOfGenes(GENES, '7'); }
         },
 
         {
             name: 'chromosome17',
-            function: `rowOfGenes(GENES, '17')`
-        },
+            action: function() { rowOfGenes(GENES, '17'); }
+        }
     ];
 
     // make buttons for geneCategories
@@ -105,8 +106,9 @@ function menuDNA()
         geneButton.onclick = function()
         {
             clickSound();
-            // make row of gene data
-            eval(geneCategories[x].function);
+            
+            // Call the stored function directly
+            geneCategories[x].action(); 
         };
         theMenu.append(geneButton);
     }
