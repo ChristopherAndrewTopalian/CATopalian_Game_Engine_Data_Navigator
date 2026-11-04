@@ -26,11 +26,15 @@ function menuPlayer()
     //-//
 
     let theMenu = ce("div");
-    theMenu.className = "divStyle001";
+    //theMenu.className = "divStyle001";
     theMenu.style.width = '200px';
     theMenu.style.height = '200px';
     theMenu.style.marginBottom = 4 +'px';
     theMenu.style.overflowY = "auto";
+    theMenu.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    theMenu.style.border = '1px solid rgb(255, 255, 255)';
+    theMenu.style.borderRadius = '8px';
+    theMenu.style.padding = '2px 5px';
     mainDiv.append(theMenu);
 
     //-//

@@ -10,7 +10,7 @@ function makePlayer()
     player.style.backgroundSize = 'cover';
     //player.style.backgroundPosition = 'center center';
     //player.style.backgroundRepeat = 'no-repeat';
-    //player.style.objectFit = 'cover';
+    player.style.objectFit = 'cover';
     player.style.zIndex = 2;
     player.ondblclick = function()
     {
