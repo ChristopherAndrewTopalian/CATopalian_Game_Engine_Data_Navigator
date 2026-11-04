@@ -2,6 +2,7 @@
 
 function rowOfGenes(whichArray, criteria1)
 {
+    console.log('hi');
     let rowId = 'rowOfGenes';
 
     //-//
@@ -22,10 +23,11 @@ function rowOfGenes(whichArray, criteria1)
     mainDiv.title = "rowOfGenes(whichArray)";
     mainDiv.style.position = "absolute";
     mainDiv.style.left = ourPlayer.x + 40 + 'px';
-    mainDiv.style.top = ourPlayer.y;
+    mainDiv.style.top = ourPlayer.y + 'px';
     mainDiv.style.display = "flex";
     mainDiv.style.flexDirection = "row";
     mainDiv.style.gap = "10px";
+    mainDiv.style.zIndex = 999;
     ba(mainDiv);
 
     //-//
