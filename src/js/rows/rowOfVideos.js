@@ -1,5 +1,7 @@
 // rowOfVideos.js
 
+
+
 // adds videos to the page. The videos must allow embed. On youtube, we copy the url in the Address Bar   
 
 // for example https://www.youtube.com/watch?v=Q4tPG-cwiWE    
@@ -106,11 +108,21 @@ function rowOfVideos(theX, theY, sizeX, sizeY, whichArray, criteria)
 
             //-//
 
+            // because youtube is now laggy,  we just link to it, instead of showing the video inworld.
+
+            let makeVideo = ce("a");
+            makeVideo.href = whichArray[i].url;
+            makeVideo.textContent = whichArray[i].url;
+            makeVideo.style.width = sizeX + 'px';
+            makeVideo.style.height = sizeY + 'px';
+            subDiv.append(makeVideo);
+            /*
             let makeVideo = ce("iframe");
             makeVideo.src = whichArray[i].url;
             makeVideo.style.width = sizeX + 'px';
             makeVideo.style.height = sizeY + 'px';
             subDiv.append(makeVideo);
+            */
         }
     }
 }

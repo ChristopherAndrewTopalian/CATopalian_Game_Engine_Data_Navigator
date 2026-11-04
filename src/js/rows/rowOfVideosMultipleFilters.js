@@ -112,11 +112,14 @@ function rowOfVideosMultipleFilters(theX, theY, sizeX, sizeY, whichArray, criter
 
             //-//
 
+            // because youtube is now laggy,  we just link to it, instead of showing the video inworld.
+            /*
             let theVideo = ce("iframe");
             theVideo.src = whichArray[i].url;
             theVideo.style.width = sizeX + 'px';
             theVideo.style.height = sizeY + 'px';
             subDiv.append(theVideo);
+            */
         }
     }
 }

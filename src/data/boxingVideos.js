@@ -2,10 +2,13 @@
 
 let boxingVideos =
 [
+    /*
     { title:`Tyson Fury Glove Conspiracy Steps Back Strangely HD with Super Slow Motion & Zoom`, date:`02/27/2020 12:00 AM`, url:`https://www.youtube.com/embed/DutXMLj7zkQ`, tag:`boxing`, description:`furyWilder1`},
 
     { title:`Tyson Fury Glove Conspiracy or Fact? You decide.`, date:`02/28/2020 12:00 AM`, url:`https://www.youtube.com/embed/OFC3U2_dqno`, tag:`boxing`, description:`furyWilder1`},
+     */
     
+    /*
     { title:`Tyson Fury Glove Conspiracy in Slow Motion and Zoomed in Dragging Against His Body`, date:`02/28/2020 12:00 AM`, url:`https://www.youtube.com/embed/eHMeq04iV7c`, tag:`boxing`, description:`furyWilder1`},
     
     { title:`Tyson Fury Glove Conspiracy CAMERA WAS DISCONNECTED`, date:`03/16/2020 12:00 AM`, url:`https://www.youtube.com/embed/bYUdaPubdj4`, tag:`boxing`, description:`furyWilder1`},
@@ -29,6 +32,7 @@ let boxingVideos =
     { title:`Tyson Fury Glove Controversy`, date:`03/25/2020 12:00 AM`, url:`https://www.youtube.com/embed/wxM6Yvvs0HU`, tag:`boxing`, description:`furyWilder2`},
     
     { title:`Fury Cheated and the Ref Watched`, date:`03/28/2020 12:00 AM`, url:`https://www.youtube.com/embed/0vq2fFpYbR0`, tag:`boxing`, description:`furyWilder2`}
+     */
 ];
 
 //--//

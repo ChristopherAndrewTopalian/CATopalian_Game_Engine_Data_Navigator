@@ -70,7 +70,7 @@ function wasLineCrossed(whichId)
                 ge('infoDiv').innerText = yPos + ' Crossed' + '\n' + 'Sector: ' + sector;
 
                 // loads the content
-                containerNewsVideos();
+                //containerNewsVideos();
 
                 // removes the line
                 removeElement("sector4");
@@ -87,7 +87,7 @@ function wasLineCrossed(whichId)
                 ge('infoDiv').innerText = yPos + ' Crossed' + '\n' + 'Sector: ' + sector;
 
                 // loads the content
-                containerBoxingVideos();
+                //containerBoxingVideos();
 
                 // removes the line
                 removeElement("sector5");

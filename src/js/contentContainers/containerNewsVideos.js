@@ -7,7 +7,7 @@ function containerNewsVideos()
         function()
         {
             // theX, theY, sizeX, sizeY, whichArray, criteria1
-            rowOfWebsitesOrVideos(100, yPos, 700, 500, videoEvidence, "youtubeVideo")
+            //rowOfWebsitesOrVideos(100, yPos, 700, 500, videoEvidence, "youtubeVideo")
         },
 
         function()
